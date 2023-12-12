@@ -1,0 +1,72 @@
+body{ 
+   animation: 4s ease 0s mySlide;
+   font-family: Calibri, Helvetica, sans-serif;  
+   color:#FFF;
+   .background-image: url(n14.jpg);
+   background-color: transparent;
+   background-size: cover;
+  }  
+  .container {  
+    animation: 4s ease 0s myOpacity;
+    background-color: transparent;
+    .background-image: url(n14.jpg);
+    background-size: cover;
+  }  
+    
+  input[type=text], input[type=password], textarea {  
+    width: 35%;  
+    padding: 15px;  
+    margin: 5px 0 22px 0;  
+    display: inline-block;  
+    border: none;
+    border-radius: 8px;  
+    background: #f1f1f1;
+    
+      content: ' *';
+      color: red;
+    }
+
+     
+    
+ 
+  input[type=text]:focus, input[type=password]:focus {  
+    background-color: rgb(245, 243, 240);  
+    outline: none;  
+  }  
+   div {  
+              padding: 10px 0;  
+           }  
+  hr {  
+    border: 1px solid #f1f1f1;  
+    margin-bottom: 25px;  
+  }  
+  .registerbtn {  
+    background: #00bcd4;
+    color: #FFF;
+    padding: 15px;  
+    margin: 5px 22px 0; 
+    display: inline-block;  
+    border: none;
+    border-radius: 8px;  
+    cursor: 35%;  
+    opacity: 0.9;  
+  }  
+  .registerbtn:hover {  
+    background: #FFF;
+    color: #00bcd4;  
+  }  
+
+  @keyframes mySlide{
+    from{margin-left: 100%;}
+    to{margin-left: 0%;}
+  }
+  
+  @keyframes myScale{
+    10%{transform: scale(0.8, 0.3);}
+  }
+  
+  @keyframes myOpacity{
+    50%{opacity: 0;}
+  }
+
+  

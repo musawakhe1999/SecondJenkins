@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    
+<!-- Template Stylesheet -->
+
+    <link href="css/style.css" rel="stylesheet">
+   
+
+<!-- tag to create icons using fontawsome-->
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- Include Bootstrap CSS and JS -->
+
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+<!-- Include Bootstrap JS at the end of the body or at the bottom of your HTML file. -->
+
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+        
+     
+     
+    <!-- chatbot header-->
+   <!-- Google Fonts Link For Icons -->
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,1,0" />
+   <script src="script.js" defer></script>
+   <link rel="stylesheet" href="style.css">
+
+   
+</head>
+
+<body style="background-color: transparent;" >
+   
+    <div class="mainBody container">
+            <!-- Main Container-->
+
+             <!--Slinding window container Container-->
+               <div class="container-xxl-fluid py-5">
+
+                    <div id="carouselAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselAutoplaying" data-bs-slide-to="0" class="" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselAutoplaying" data-bs-slide-to="1" aria-label="Slide 2" class=""></button>
+                            <button type="button" data-bs-target="#carouselAutoplaying" data-bs-slide-to="2" aria-label="Slide 3" class="active" aria-current="true"></button>
+                          </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                    <div class="Heading1">
+                                    </div>
+                                    <img src="images/b1.jpg" class="d-block w-100" alt="First slide" id="myImage1" height="600">
+
+                                    <div class="container" >
+                                        <div class="carousel-caption text-lg-center ">
+                                          <h1>Are you ready to shine Bright in your academic journey?</h1>
+                                          <p>Your future is only one click away</p>
+                                         
+                                        </div>
+                                      </div>
+                                    
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="Heading1">
+                                    </div>
+                                    <div class="myImage" id="myImage2">
+                                    <img src="images/n14.jpg" class="d-block w-100" alt="Reach your full potential " id="myImage2" height="600">
+                                    </div>
+                                    <div class="container">
+                                        <div class="carousel-caption text-lg-center" >
+                                            <h1>Reach your full potential </h1>
+                                            <p>Empower Your Education with Us</p>
+                                           
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="Heading1">
+                                    </div>
+                                    <img src="images/online-tutoring-cheerful-african-lady.webp" class="d-block w-100" alt="Are you ready to shine Bright in your academic journey?" id="myImage3" height="600">
+
+                                        <div class="container">
+                                        <div class="carousel-caption text-lg-center">
+                                        <h1>Bringing briliance to Surface</h1>
+                                        <p>Meet Our dedicated briliant Tutors High School Approved</p>
+                                      
+                                        </div>
+                            </div>
+                        
+                        </div>
+
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselAutoplaying" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselAutoplaying" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                        </div>
+                </div>
+
+                 <script>
+
+                    var currentImage = 1;
+                    var totalImages = 3;
+
+                    function switchImage() {
+                        currentImage = (currentImage % totalImages) + 1;
+                        var imageElement = document.getElementById('myImage1');
+                        imageElement.src = 'image' + currentImage + 'images/n14.jpg';
+                        imageElement.alt = 'Image ' + currentImage;
+                    }
+
+                 </script>
+                    
+                    </body>
+                    </html>
+                    
+    
+                    
+
+                <!-- why Us container -->
+                <div class="container-xxl py-5">
+                    <div class="container " >
+                        
+                        <div  class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.3s" style="max-width: 600px;">
+                                <div class="whyHeader">
+                                <h2> Why Choose Bright Future Tutors? </h2>
+                                </div>
+                        </div>
+                        <div class="row g-4">
+                            <div class="col-md-4 col-sm-4 wow fadeInUp" data-wow-delay="0.3s">
+                                <div class="whyUs-item">
+                                    <div class="whyUs-icon">
+                                        <img src="images/progress-bar-opt.gif" alt="A sample GIF image" class="img-fluid"   style="border-radius: 50%;">
+                                    </div>
+                                    <div class="whyUs-text ">
+                                        <h3> Progress Tracking </h3>
+                                        <P>
+                                        Stay on top of your progress with our comprehensive assessment tools <br>
+                                        and receive valuable feedback from your tutor.
+                                        </P>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-4 wow fadeInUp" data-wow-delay="0.3s">
+                                <div class="whyUs-item">
+                                    <div class="whyUs-icon ">
+                                        <span class=""></span>
+                                        <i class="fa fa-donate fa-3x "></i>
+                                        <span class=""></span>
+                                    </div>
+                                    <div class="whyUs-text ">
+                                        <h3>Affordable Rates</h3>
+                                        <P>
+                                        We believe that top-tier education should be accessible to all.<br>
+                                        Our pricing is competitive and designed to suit your budget.
+                                        </P>
+                                    </div>
+                                </div>
+                            </div>
+
+                            
+                            <div class="col-md-4 col-sm-4 wow fadeInUp" data-wow-delay="0.3s">
+                                <div class="whyUs-item">
+                                    <div class="whyUs-icon ">
+                                        <i class="fa-solid fa-user-pen fa-3x "></i>    
+                                    </div>
+                                    <div class="whyUs-text  ">
+                                        <h3> Flexibility in Learning </h3> 
+                                        <P>
+                                        We offer flexibility in scheduling to accommodate your busy life. <br>
+                                        Learn at your own pace, in the comfort of your own space, on your terms
+                                        </P>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row g-4">
+                            <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                                <div class="whyUs-item">
+                                    <div class="whyUs-icon "> 
+                                        <i class="fa fa-bus-alt fa-3x "></i>
+                                    </div>
+                                    <div class="whyUs-text ">
+                                        <h3>Exceptional Tutors </h3> 
+                                        <p>Our tutors are not just educators; they are mentors who inspire and empower students.<br> 
+                                            They are experts in their fields, committed to nurturing your full potential</P>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                                <div class="whyUs-item">
+                                    <div class="whyUs-icon ">
+                                        <span class=""></span>
+                                        <i class="fa fa-futbol fa-3x "></i>
+                                        <span class=""></span>
+                                    </div>
+                                    <div class="whyUs-text ">
+                                        <h3>Personalized Learning</h3>
+                                        <P>
+                                            We recognize that every learner has their strengths and challenges.<br>
+                                            Our tutoring sessions are customized to meet your specific needs, ensuring efficient and effective progress.
+                                        </P>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                                <div class="whyUs-item">
+                                    <div class="whyUs-icon ">
+                                        <span class=""></span>
+                                        <i class="fa fa-chalkboard-teacher fa-3x "></i>
+                                        <span class=""></span>
+                                    </div>
+                                    <div class="whyUs-text ">
+                                        <h3>Interactive Virtual Learning </h3>
+                                        <P>
+                                            Our state-of-the-art online platform fosters engaging and interactive learning experiences.<br> 
+                                            Connect seamlessly with your tutor, no matter where you are.
+                                        </P>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End -->
+
+    
+              <!-- joinUs become a tutor home page -->
+              <div class="container-xxl py-5">
+                <div class="container">
+                    <div class="Join_Us">
+                        <div class="row g-0">
+                            <div class="col-md-4 wow fadeIn" data-wow-delay="0.1s" style="min-height: 400px;">
+                                <div class="position-relative h-100">
+                                    <img class="position-absolute w-100 h-100 rounded" src="images/personalized.jpeg" style="object-fit: cover;">
+                                </div>
+                            </div>
+                           
+                            <div class="col-md-4 wow fadeIn" data-wow-delay="0.5s">
+                                <div class="h-100 d-flex flex-column justify-content-center p-5">
+                                    <h1 class="mb-4">Become A Teacher</h1>
+                                    <p> If you are ready to join our team and make a positive impact on student's lives,
+                                        click the "Get started Now" button below.
+                                        We look forward to welcoming you to Bright Tutor Futures.
+                                        </p>
+                                        <a href="../application/Aplication_Form.html" > <button type="button"   id="tutor"  >Get Started Now</button></a>
+                                </div>
+                          
+                            </div>
+                            <div class="col-md-4 wow fadeIn" data-wow-delay="0.5s">
+                                <div class="h-100 d-flex flex-column justify-content-center p-5">
+                                    <h1 >Become A Student</h1>
+                                        <p >Ready to embark on your journey to academic success?
+                                        Click the "Get Started Now" button below to reach out to us. We're excited to help you achieve your educational goals.
+                                        </p>
+                                    <a href="../application/Aplication_Form.html"><button type="button" href="" id="learner" >Get Started Now</button></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End -->
+            
+
+            <!-- fourth Nested Container-->
+            <div class="slogan" id="">
+                    <p>Guiding dreams, building futures</p>
+            </div>
+
+
+             <button class="chatbot-toggler">
+      <span class="material-symbols-rounded">mode_comment</span>
+      <span class="material-symbols-outlined">close</span>
+    </button>
+    <div class="chatbot">
+      <header>
+        <h2>Chatbot</h2>
+        <span class="close-btn material-symbols-outlined">close</span>
+      </header>
+      <ul class="chatbox">
+        <li class="chat incoming">
+          <span class="material-symbols-outlined">smart_toy</span>
+          <p>Hi there 👋<br>How can I help you today?</p>
+        </li>
+      </ul>
+      <div class="chat-input">
+        <textarea placeholder="Enter a message..." spellcheck="false" required></textarea>
+        <span id="send-btn" class="material-symbols-rounded">send</span>
+      </div>
+    </div>
+
+        
+
+           
+
+    </div>
+ 
+</body>
+</html>

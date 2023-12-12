@@ -1,0 +1,66 @@
+.Owethu {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.heading {
+    display: flex;
+    justify-content: center;
+    margin-top: 0px;
+    color: color #FFF;
+    font-family: Open Sans;
+}
+
+.wrapper {
+
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, .5);
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+  width: 59%;
+  height: 849px;
+  margin-left: 20%;
+}
+
+
+.registerbtn {  
+    display: flex;
+    justify-content: center;
+    background: #00bcd4;
+    color: #FFF;
+    padding: 15px;  
+    margin: 5px 22px 0; 
+    display: inline-block;  
+    border: none;
+    border-radius: 8px;  
+    cursor: 35%;  
+    opacity: 0.9;  
+  }  
+  .registerbtn:hover {  
+    background: #FFF;
+    color: #00bcd4;  
+  }  
+
+  .form-control.success input {
+    border-color: #09c372;
+  }
+
+  .form-control.error input {
+    border-color: #ff3860;
+  }
+
+  .form-control.error {
+    color: #ff3860;
+    font-size: 15px;
+    height: 3px;
+}
+
+.form-control.success #genderInput {
+  border-color: #09c372;
+}
+
+.form-control.error #genderInput {
+  border-color: #ff3860;
+}

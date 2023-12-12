@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>
+		Upload Marks
+	</title>
+	
+  <link rel = "stylesheet" href = "Tutor.css">
+ <!--<script defer src="./TutorUpload.js"></script>-->  
+</head>
+
+<body>
+	
+	
+	<h1 style="color: #23dfec;">
+		STUDENT MARKS
+	</h1>
+	<h2>User Data Management</h2>
+
+	<div id="formContainer">
+	<form id="form" action="/">
+	 
+    <div class = "center">
+
+		<div class="input-control"> 
+		<label for="nameInput">
+			Name:
+		</label>
+		<input type="text" id="nameInput" placeholder="Enter your name">
+		<div class="error"></div> 
+		</div>
+		
+		<div class="input-control"> 
+		<label for="emailInput">
+			Email:
+		</label>
+    <input  id="emailInput" placeholder="Enter your email">
+	<div class="error"></div> 
+		</div>
+
+		<div class="input-control"> 
+		<label for="numberInput">
+			Mathematics:
+		</label>
+		<input type="number" id="mathematics" placeholder="Enter student maths mark">
+		<div class="error"></div> 
+		</div>
+
+
+    <div class="input-control"> 
+    <label for="numberInput">
+			Physical science:
+		</label>
+		<input type="number" id="physics" placeholder="Enter student physics mark ">
+		<div class="error"></div> 
+	</div>
+
+	<div class="input-control"> 
+    <label for="numberInput">
+			Accounting:
+		</label>
+		<input type="number" id="accounting" placeholder="Enter student Accounting mark">
+		<div class="error"></div> 
+	</div>
+		
+
+	
+		<label for="numberInput">
+			Tutor comment:
+		</label>
+		<textarea id="tutorComment" name="w3review" rows="4" cols="10">
+		
+			</textarea>
+		<button type="submit" onclick="validation()">
+			Add
+		</button>
+  </div>
+   </form>
+	</div>
+	<table id="outputTable">
+		<tr>
+			<th>Name</th>
+			<th>Email</th>
+			<th>Mathematics</th>
+			<th>Physical Sciences</th>
+			<th>Accounting</th>
+             <th>Action</th>
+			 
+		</tr>
+	</table>
+	
+	<script>
+		function addData() {
+			// Get input values
+			let name =
+				document.getElementById("nameInput").value;
+			let email =
+				document.getElementById("emailInput").value;
+			let mathematics =
+				document.getElementById("mathematics").value;
+			let physics =
+				document.getElementById("physics").value;
+      let accounting =
+				document.getElementById("accounting").value;
+			
+			// Get the table and insert a new row at the end
+			let table = document.getElementById("outputTable");
+			let newRow = table.insertRow(table.rows.length);
+			
+			// Insert data into cells of the new row
+			newRow.insertCell(0).innerHTML = name;
+			newRow.insertCell(1).innerHTML = email;
+			newRow.insertCell(2).innerHTML = mathematics;
+			newRow.insertCell(3).innerHTML = physics;
+      newRow.insertCell(4).innerHTML = accounting;
+			newRow.insertCell(5).innerHTML =
+				'<button onclick="editData(this)">Edit</button>'+
+				'<button onclick="deleteData(this)">Delete</button>';
+			
+			// Clear input fields
+			clearInputs();
+		}
+
+		function editData(button) {
+			
+			// Get the parent row of the clicked button
+			let row = button.parentNode.parentNode;
+			
+			// Get the cells within the row
+			let nameCell = row.cells[0];
+			let emailCell = row.cells[1];
+			let mathematicsCell = row.cells[2];
+			let physicsCell = row.cells[3];
+      let accountingCell = row.cells[4];
+			
+			// Prompt the user to enter updated values
+			let nameInput =
+				prompt("Enter the updated name:",
+					nameCell.innerHTML);
+			let emailInput =
+				prompt("Enter the updated email:",
+					emailCell.innerHTML);
+			let mathematics =
+				prompt("Enter the updated maths mark:",
+        mathematicsCell.innerHTML
+				);
+			let physics=
+				prompt("Enter the updated physics mark:",
+        physicsCell.innerHTML
+				);
+        let accounting=
+				prompt("Enter the updated accounting mark:",
+        accountingCell.innerHTML
+				);
+			
+			
+			// Update the cell contents with the new values
+			nameCell.innerHTML = nameInput;
+			emailCell.innerHTML = emailInput;
+			mathematicsCell.innerHTML = mathematics;
+      physicsCell.innerHTML = physics;
+      accountingCell.innerHTML = accounting;
+		}
+		function deleteData(button) {
+			
+			// Get the parent row of the clicked button
+			let row = button.parentNode.parentNode;
+
+			// Remove the row from the table
+			row.parentNode.removeChild(row);
+		}
+		function clearInputs() {
+			
+			// Clear input fields
+			document.getElementById("nameInput").value = "";
+			document.getElementById("emailInput").value = "";
+			document.getElementById("mathematics").value = "";
+			document.getElementById("physics").value = "";
+      document.getElementById("accounting").value = "";
+		}
+
+		//code for validation
+
+		function validation(){
+
+			const form = document.getElementById('form');
+const nameInput = document.getElementById('nameInput');
+const emailInput = document.getElementById('emailInput');
+const mathematics = document.getElementById('mathematics');
+const physics = document.getElementById('physics');
+const accounting = document.getElementById('accounting');
+
+
+
+
+form.addEventListener('submit', e => {
+    e.preventDefault();
+
+    validateInputs();
+});
+
+const setError = (element, message) => {
+    const inputControl = element.parentElement;
+    const errorDisplay = inputControl.querySelector('.error');
+
+    errorDisplay.innerText = message;
+    inputControl.classList.add('error');
+    inputControl.classList.remove('success')
+}
+
+const setSuccess = element => {
+    const inputControl = element.parentElement;
+    const errorDisplay = inputControl.querySelector('.error');
+
+    errorDisplay.innerText = '';
+    inputControl.classList.add('success');
+    inputControl.classList.remove('error');
+};
+
+const isValidEmail = emailInput => {
+    const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return re.test(String(emailInput).toLowerCase());
+}
+
+const isValidnameInput = nameInput => {
+    var red = /^[A-za-z]+$/;
+    return red.test(nameInput);
+}
+
+
+let index=0;
+const validateInputs = () => {
+    const nameInputValue = nameInput.value.trim();
+    const emailInputValue = emailInput.value.trim();
+    const mathematicsValue = mathematics.value.trim();
+    const physicsValue = physics.value.trim();
+    const accountingValue = accounting.value.trim();
+    
+    
+    
+
+	if(nameInputValue === '') {
+        setError(nameInput, 'First Name is required');
+    } else if (!isValidnameInput(nameInputValue)) {
+        setError(nameInput, 'Please enter characters only');
+    } else {
+		index=index+1;
+        setSuccess(nameInput);
+    }
+
+	
+    
+    if(emailInputValue === '') {
+        setError(emailInput, 'Email is required');
+    } else if (!isValidEmail(emailInputValue)) {
+        setError(emailInput, 'Provide a valid email address');
+    } else {
+		index=index+1;
+        setSuccess(emailInput);
+    }
+
+    if(mathematicsValue === '') {
+        setError(mathematics, 'Mathematics student marks are required');
+    } else {
+		index=index+1;
+        setSuccess(mathematics);
+    }
+    
+    if(physicsValue === '') {
+        setError(physics, 'Physics student marks are required');
+    } else {
+		index=index+1;
+        setSuccess(physics);
+    }
+
+    if(accountingValue === '') {
+        setError(accounting, 'Accounting student marks are required');
+    } else {
+		index=index+1;
+        setSuccess(accounting);
+    }
+   
+	if(index==5){
+		addData();
+	}
+
+};
+ 
+
+
+		}
+
+
+		
+	</script>
+	
+</body>
+
+</html>

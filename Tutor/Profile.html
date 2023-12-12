@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <meta charset="UTF-8">
+        <meta http-equiv="x-UA-compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width,initial scale=1.0">
+        <title>Documents</title>
+        <link rel="stylesheet" href="StudentProfile.css">
+        <script src="https://kit.fontawesome.com/d8583f37f1.js" crossorigin="anonymous"></script> 
+</head>
+<body >
+    
+
+ 
+        <div  class="container">
+            <div class="row">
+
+                <div class="about-col2">
+                    <h1 class="subtitle">Sizwe Sishange</h1>
+                    <p>My name is Sizwe Sishange im recently graduate at Mangosuthu unirvesity of technology.<br/>I m located in orange farm township and i m looking for an internship of software development</p>
+                    <div class="tab-tittles">
+                        <p class="tablinks active-link" onclick="opentab('skills')">Personal Details</p>
+                        <p class="tablinks" onclick="opentab('expirience')">Contact Details</p>
+                        <p class="tablinks" onclick="opentab('education')">Address</p>
+                        <p class="tablinks" onclick="opentab('nextofkin')">Next of Kin</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                           <li> <span>Date of Birth :</span><br>06/05/1999</li>
+                           <li> <span>Gender :</span><br>Male</li>
+                           <li> <span>ID No :</span><br>9905065520083</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="expirience">
+                        <ul>
+                           <li> <span>email :</span><br>musawakhe332@gmail.com</li>
+                           <li> <span>Phone No :</span><br>0632986668</li>
+                           <li> <span>linkden :</span><br>https://kit.fontawesome.com/d8583f37f1.js</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                           <li> <span>Township :</span><br>Orange Farm ,12859 Postal Code 1841</li>
+                           <li> <span>Town :</span><br>Johannesburg</li>
+                           <li> <span>Province :</span><br>Gauteng</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="nextofkin">
+                        <ul>
+                           <li> <span>Name :</span><br>Zandile Mdakane</li>
+                           <li> <span>Relationship :</span><br>Mother</li>
+                           <li> <span>Contact :</span><br>0793556264</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+   
+    <script>
+
+         /* Use any element to open the sidenav -*/
+
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+        
+        }
+
+        /* Set the width of the side navigation to 0 */
+        function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+}
+
+
+        var tablinks=document.getElementsByClassName("tab-links");
+        var tabcontents=document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+
+            for(tablink of tablinks)
+            {
+                tablink.classList.remove("active-link");
+
+            }
+            for (tabcontent of tabcontents)
+            {
+                  tabcontent.classList.remove("active-tab");
+            }
+            
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+
+        }
+    </script>
+    
+</body>
+</html>

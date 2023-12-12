@@ -1,0 +1,32 @@
+.Owethu {
+    display: flex;
+    justify-content: center;
+    
+    
+}
+
+.Position {
+    display: flex;
+    justify-content: center;
+    text-align: right;
+    
+    
+}
+
+.wrapper {   
+    background: transparent;
+    border: transparent;
+    border-radius: 0px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    height: 500px;
+  
+  }
+
+.heading {
+    display: flex;
+    justify-content: center;
+    margin-top: 0px;
+    color: color #FFF;
+    font-family: Open Sans;
+}

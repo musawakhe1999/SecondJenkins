@@ -1,0 +1,107 @@
+body {
+	background: transparent;
+	margin: 0;
+}
+
+.tiles {
+	margin: 48px auto;
+	width: max-content;
+	display: grid;
+	grid-template-columns: repeat(4, 100px);
+	gap: 16px;
+	box-sizing: border-box;
+}
+
+.tile {
+	height: 100px;
+	background: #111111;
+	border: 5px solid #444444;
+	cursor: pointer;
+}
+ p{
+	color: white;
+	margin-left: 200px;
+	font-size: 19px;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+ }
+ .timer {
+    margin-top: 20px;
+    font-size: 2em; /* Increase the font size for better visibility */
+    font-family: 'Arial', sans-serif;
+    color: black; /* Text color */
+	margin-left: 650px;
+    padding: 10px;
+    border: 2px solid #333; /* Border color */
+    border-radius: 5px; /* Border radius for rounded corners */
+    display: inline-block;
+	background-color: white;
+
+}
+
+/* Optional: Add some animation to the timer */
+.timer {
+    transition: color 0.3s ease-in-out;
+}
+
+.modal {
+	display: none;
+	position: fixed;
+	top: 30%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	padding: 20px;
+	background-color: #fff;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+	text-align: center;
+}
+
+.modal h2 {
+	color: red;
+}
+
+.modal p {
+	margin-bottom: 20px;
+	margin-left: 20px;
+	color: #111111;
+}
+
+.modal button {
+	padding: 10px 20px;
+	font-size: 16px;
+	cursor: pointer;
+	background-color: #00bcd4;
+}
+.moda {
+	display: none;
+	position: fixed;
+	top: 30%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	padding: 20px;
+	background-color: #fff;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+	text-align: center;
+}
+
+.moda h2 {
+	color: #00bcd4;;
+}
+
+.moda p {
+	margin-bottom: 20px;
+	margin-left: 20px;
+	color: #111111;
+}
+
+.moda button {
+	padding: 10px 20px;
+	font-size: 16px;
+	cursor: pointer;
+	background-color: #00bcd4;;
+}
+
+

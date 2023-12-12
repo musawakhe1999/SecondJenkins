@@ -1,0 +1,139 @@
+body{
+    background-color: transparent;
+    color: #fff;
+}
+
+.sidebar {
+    /*display: flex;
+    justify-content: center ;
+    flex-direction: column;*/
+    width: 18%;
+    background-color: #343a40;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+}
+
+.sidebar-button #profile{
+    background-color: #23dfec;
+    color: #fff;
+    padding: 15px 15px;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 30px;
+    margin-top: 50px;
+    width: 100%;
+    left: 10px;
+  }
+  .sidebar-button #profile:hover{
+    background: #FFF;
+    color: #00bcd4;
+  }
+.sidebar-button-signout #signout{
+    background-color: #23dfec;
+    color: #fff;
+    padding: 15px 15px;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    left: 10px;
+}
+
+.sidebar-button-signout #signout:hover{
+    background: #FFF;
+    color: #00bcd4;
+  }
+
+
+.avatar {
+    max-width: 100%;
+    height:auto;
+    display: flex;
+    justify-content: center;
+    padding: 5px;  
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container {
+   
+    margin-left: 18%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center ;
+    gap: 1em;
+    height: 100%;
+    
+   
+}
+
+    .flex-item #maths{
+            background-color: #23dfec;
+            color: #fff;
+            padding: 10px;
+            text-decoration: none;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-bottom: 10px;
+        }
+    
+        .flex-item #maths:hover{
+            background: #FFF;
+            color: #00bcd4;
+          }
+
+    .flex-item #physics{
+        background-color: #23dfec;
+        color: #fff;
+        padding: 10px;
+        text-decoration: none;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+       
+        margin-bottom: 10px;
+    }
+
+    .flex-item #physics:hover{
+        background: #FFF;
+        color: #00bcd4;
+      }
+
+    .flex-item #Accounting {
+        background-color: #23dfec;
+        color: #fff;
+        padding: 10px;
+        text-decoration: none;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+       
+        margin-bottom: 10px;
+    }
+
+    .flex-item #Accounting:hover{
+        background: #FFF;
+        color: #00bcd4;
+      }
+
+    /* Style for each flex item */
+    .flex-item {
+        display: flex;
+        justify-content: center ;
+        gap: 1em;
+    
+
+    }
+
+    .dashboard {
+        display: flex;
+        justify-content: center ;
+        
+    }
+

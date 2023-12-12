@@ -1,0 +1,98 @@
+<section class="section2" id="AboutUs">
+    <h>
+        <link rel="stylesheet" href="AboutUs.css">
+    </h>
+    <table>
+    <tr>
+    <td>
+    <img id="image1" onmouseover="setNewImage1()" onmouseout="setOldImage1()"  src="https://i0.wp.com/academiamag.com/wp-content/uploads/2022/11/problems-with-the-education-system.jpg?fit=1380%2C780&ssl=1" alt="AboutUs">
+    </td>
+    <td>
+      <body>
+        <span class="title">About Us</span>
+        <p>Welcome to Bright Future Tutors, your trusted partner in educational excellence. At Bright Futures Tutors, we are passionate about helping students reach their full academic potential.</p>
+        
+        <span class="sub-title">Why choose us</span>
+        <pre>
+        -Highly qualified tutors with a passion for teaching.
+        -Customised learning plans to cater to each student's unique needs.
+        -A commitiment to fostering a love for learning, not just boosting grades.
+        -A proven track record of inspiring and empowering students.
+        -A welcoming and a supportive community of learners.
+           <span id="dots">.</span></pre>
+        
+        <div class = "sub-title" id="ourTeam">
+          Our Team.
+          <p>Our team of experienced tutors is the heart of Bright Future Tutors. They are not only experts in their respective subjects but also skilled mentors who understand the challenges students face. Our tutors are passionate about teaching, and they are dedicated to creating a supportive and motivating learning environment.</p> 
+          <span class="sub-title" style = "font-size: 100%">What sets us apart?</span>
+          <p>At Bright Future Tutors, we believe that education is not one-size-fits-all. That's why we tailor our tutoring sessions to meet the individual needs and learning styles of each student. Whether your child needs help with math, science, language arts, or test preparation, we have a personalized approach to help them succeed.</p>
+        
+        </div>
+
+        <a href="#OurMission" class="btn1">Our Mission</a>
+        <button onclick="myFunction()" class="btn2" id="myBtn">Read more</button>
+        
+        
+        <script>
+          function myFunction() {
+            var dots=document.getElementById("dots");
+           var moreText = document.getElementById("ourTeam");
+
+           var btnText = document.getElementById("myBtn");
+           if (dots.style.display === "none") {
+             dots.style.display = "inline";
+             btnText.innerHTML = "Read more"; 
+             moreText.style.display = "none";
+           } else {
+              dots.style.display = "none";
+              btnText.innerHTML = "Read less"; 
+              moreText.style.display = "inline";
+           }
+         }
+
+         function setNewImage(){
+            document.getElementById("image").src="unsplash1.jpg";
+           
+         }
+
+         function setOldImage(){
+          document.getElementById("image").src="https://hexaware.com/wp-content/uploads/2019/10/Education-1.jpg";
+
+         }
+
+         function setNewImage1(){
+            document.getElementById("image1").src="varsity1.jpg";
+           
+         }
+
+         function setOldImage1(){
+          document.getElementById("image1").src="https://i0.wp.com/academiamag.com/wp-content/uploads/2022/11/problems-with-the-education-system.jpg?fit=1380%2C780&ssl=1";
+
+         }
+       
+        </script>
+    </body>
+    
+    </td>
+    </tr>
+    </table>
+    </section>
+    
+    <section class="section3" id="OurMission">
+    <table>
+    <tr>
+    <td>
+    <span class="title">Our Mission and Vision</span>
+    <span class="sub-title">Mission</span>
+    <p>At Bright Future Tutors, our mission is to empower matric candidates to excel in Mathematics, Physical Sciences, and Accounting. We are committed to providing personalized, high-quality tutoring services that not only improve academic performance but also foster a deep understanding and passion for these subjects. Our dedicated team of educators strives to make complex concepts accessible, enabling students to achieve their academic goals and embark on successful futures.</p>
+    <span class="sub-title">Vision</span>
+    <p>Our vision at Bright Future Tutors is to be the foremost provider of specialized tutoring services for matric candidates in mathematics, physics, and accounting. We aim to be recognized as the driving force behind students' academic success and the cultivation of their problem-solving skills. We envision a future where our graduates are not only proficient in these subjects but also equipped with the confidence and knowledge needed to excel in their chosen careers. As we continue to expand our reach, we aspire to positively impact the educational landscape, creating a generation of confident and capable learners.</p>
+    </td>
+    <td>
+    <img id="image" onmouseover="setNewImage()" onmouseout="setOldImage()"       src="https://hexaware.com/wp-content/uploads/2019/10/Education-1.jpg" alt="AboutUs">
+    </td>
+    </tr>
+    </table>
+    </section>
+
+

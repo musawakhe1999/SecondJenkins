@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Memory Game - JavaScript DOM Project</title>
+	<link rel="stylesheet" href="game.css">
+	<script src="game.js" defer></script>
+</head>
+<body>
+
+
+	
+
+
+	<div class="timer-container">
+     
+        <div class="timer">00:00:00</div>
+		</div>
+
+		<div id="gameOverModal" class="modal">
+			<h2>Game Over!</h2>
+			<p>Time limit exceeded.</p>
+			<button onclick="restartGame()">Restart</button>
+		</div>
+		
+		<div id="youWinModal" class="moda">
+			<h2>Congratulations, You Win!</h2>
+			<p>Time: <span id="winTime">00:00:00</span></p>
+			<button onclick="restartGame()">Restart</button>
+		</div>
+
+	
+
+    <script src="script.js"></script>
+
+	  <!--game instructions-->
+	  <div class="instructions">
+		<p>When you open the game, you'll see a grid of tiles with various colors. Each color has a pair.
+			Click on a tile to reveal its color.
+            Click on another tile to reveal its color.<br>
+            If the colors of the two tiles match, they will remain revealed.
+            If the colors don't match, the tiles will be hidden again after a brief moment.<br>
+            Try to remember the colors and their positions to make successful matches.
+			Continue revealing and matching pairs until all tiles are revealed.<br>
+            Once all pairs are matched, a message will pop up saying "You win! Refresh to start again."
+		</p>
+	  </div>
+	  <div class="tiles"></div>
+
+</body>
+</html>

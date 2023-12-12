@@ -1,0 +1,161 @@
+
+		body {
+			margin: 4rem;
+         
+            background-size: cover;
+		}
+
+		#formContainer {
+			
+            color: #fff;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+                
+  
+
+		}
+
+		label {
+			display: block;
+			margin-top: 10px;
+            color: #fff;
+            margin-left: 40px;
+            font-size: 120%;
+		}
+
+		input,
+		textarea {
+			width: 300px;
+			padding: 8px;
+			margin-top: 5px;
+			border: 1px solid #ccc;
+			border-radius: 4px;
+		}
+
+		button {
+			margin: 10px;
+			padding: 8px 16px;
+			background-color: #23dfec;
+			color: #fff;
+			border: none;
+			border-radius: 4px;
+			cursor: pointer;
+		}
+
+		button:hover {
+			background-color: #23dfec;
+		}
+
+		table {
+			border-collapse: collapse;
+			margin-bottom: 20px;
+			width: 100%;
+            color: #fff;
+		}
+
+		th,
+		td {
+			border: 1px solid #ddd;
+			padding: 8px;
+			text-align: left;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 100;
+		}
+
+		th {
+			background-color: #23dfec;
+			color: #fff;
+		}
+        h1{
+            text-align: center;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        h2{
+            color: #fff;
+            text-align: center;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 120%;
+        }
+        .center{
+           
+           
+            background: transparent;
+            border: 2px solid rgba(255, 255, 255, .5);
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+            border-radius: 10px;
+            margin-bottom: 30px;
+            
+        }
+        .center #physics{
+            margin-left: 40px;
+        }
+
+        .center #mathematics{
+            margin-left: 40px;
+        }
+        .center #accounting{
+            margin-left: 40px;
+        }
+        .center #nameInput{
+            margin-left: 40px;
+        }
+        .center #emailInput{
+            margin-left: 40px;
+        }
+        .center #tutorComment{
+            margin-left: 40px; 
+        }
+
+        .input-control {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .input-control input {
+          border: 2px solid #f0f0f0;
+            border-radius: 8px;
+            display: inline-block;
+            font-size: 12px;
+            padding: 15px;    
+            width: 35%;
+            margin-left: 500px;
+        
+          content: ' *';
+          color: rgb(0, 0, 0);
+        }
+        
+        .input-control input:focus {
+            outline: 0;
+        }
+        
+        .input-control.success input {
+            border-color: #09c372;
+        }
+        .input-control.error input {
+            border-color: #ff3860;
+
+        }
+
+        .input-control .error {
+            color: #ff3860;
+            font-size: 16px;
+            height: 13px;
+        }
+        
+        .error{
+            margin-left: 40px;
+        }
+        

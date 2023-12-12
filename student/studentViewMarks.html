@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel = "stylesheet" href = "studentViewMarks.css">
+        <title>View Marks</title>
+    </head>
+<style>
+table, th, td {
+  border:1px solid black;
+}
+</style>
+<body>
+ <div class="container">
+
+    <nav id = "nav">
+    <img src ="logo.png" alt="">
+    <h1>Bright Future Tutors</h1>
+    <h3>Report Card</h3>
+    </nav>
+
+    <h5>Student: Nomvuyiso Banya</h5>
+    <h5>Grade  : Twelve</h5>
+    
+
+    <table class="styled-table">
+        <thead>
+            <tr>
+                <th>Subject</th>
+                <th>1st Quarter</th>
+                <th>2nd Quarter</th>
+                <th>3rd Quarter</th>
+                <th>4th Quarter</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Mathematics</td>
+                <td>91</td>
+                <td>81</td> 
+                <td>70</td>
+                <td>75</td>
+                
+            </tr>
+           
+            <!-- and so on... -->
+    </table><br><br>
+    <pre> Grading Scale: A = 90%-100%   B = 80%-89%    C = 60%-79%   D = 50%-59%</pre>
+
+    <p><label for="w3review">Tutor's comment:</label></p>
+    <textarea  style="color: black;" readonly id="w3review" name="w3review" maxlength="0"  rows="4" cols="50">"Great job this semester! Keep it up!" </textarea><br><br>
+
+    <p>Click the button below to print the current page.</p>
+
+<button onclick="window.print()">Print report</button>
+</div>
+</body>
+</html>

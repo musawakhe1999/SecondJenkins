@@ -1,0 +1,31 @@
+body{
+    background-image: url(n14.jpg);
+    background-size: cover;
+    color: #fff;
+  
+}
+pre{
+    text-align: center;
+    margin-top: 7%;
+    font-size: 20px;
+    font-family: cursive;
+   
+}
+h3{
+    text-align: center;
+    margin-top: 4%;
+    color: #fff;
+    
+    font-size: 60px;
+    font-weight: 600;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+.DownloadDocuments{
+    text-align: center;
+}
+.logo{
+
+    max-width:100%;
+    height: auto;
+}

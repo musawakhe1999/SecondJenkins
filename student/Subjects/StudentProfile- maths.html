@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <meta charset="UTF-8">
+        <meta http-equiv="x-UA-compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width,initial scale=1.0">
+        <title>Documents</title>
+        <link rel="stylesheet" href="StudentProfile.css">
+        <script src="https://kit.fontawesome.com/d8583f37f1.js" crossorigin="anonymous"></script> 
+</head>
+<body>
+    <div class="container">
+        <link rel="stylesheet" href="Maths.css">
+        <div id="services">
+            <div class="container">
+                <h1 class="subtitle">Mathematics</h1>
+                <div class="service-list">
+                    <div >
+                        <i class="fas fa-crop-alt"></i>
+                        <h2>Download Previous Question Papers and memo</h2>
+                        <p> <a href="https://www.testpapers.co.za/gr12-mathematics">Click here </a> to download previous question papers</p>
+                      
+                    </div>
+                    <div>
+                        <i class="fab fa-app-store"></i>
+    
+                        <h2>Teams Meeting links</h2>
+                        <p>Im good in web development im another level when it come to services</p>
+                        <a href="#">Learn more</a>
+                    </div>
+                    <div>
+                        <i class="fas fa-code"></i>
+    
+                        <h2>View Marks</h2>
+                        <p>Im good in web development im another level when it come to services</p>
+                        <a href="#">Learn more</a>
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+   
+
+    </div>
+    <script>
+
+         /* Use any element to open the sidenav -*/
+
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+        
+        }
+
+        /* Set the width of the side navigation to 0 */
+        function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+}
+
+
+        var tablinks=document.getElementsByClassName("tab-links");
+        var tabcontents=document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+
+            for(tablink of tablinks)
+            {
+                tablink.classList.remove("active-link");
+
+            }
+            for (tabcontent of tabcontents)
+            {
+                  tabcontent.classList.remove("active-tab");
+            }
+            
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+
+        }
+    </script>
+    
+</body>
+</html>

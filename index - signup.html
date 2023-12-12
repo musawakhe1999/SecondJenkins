@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<header>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title> Bright Future Tutors </title>
+
+             
+  
+  <!-- tag to create icons using fontawsome-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">-->
+  <link rel="stylesheet" href="styleMain.css">
+  <link rel="stylesheet" href="bootstrap1.css">
+  <!--<link rel="stylesheet" href="bootstrap.min.css">-->
+  
+  
+  <!--main container for header using flexbox-->
+  <div class="container-fluid"> 
+    
+    <!--container for header-->
+    <div class="header">
+
+      <!--container for logo-->
+    <div class="Logo"  >
+      <a href="#iframehome" id="home"><img src="images/logo.png" alt="Company Logo" class="logo" style="border-radius: 50%;" height="" width="70"></a>
+      
+    </div>
+
+    <!--container for name and slogan of the company-->
+      <div class="subHeader">
+      <h1>The Bright Future Tutors<br>
+        <h4>Guiding dreams, building futures</h4>
+      </h1>
+      </div>
+    
+    <!--Containerr Login and register buttons -->
+      <div class="register_login">
+        <div class="register_login1">
+        <a href="#iframesubmit" >
+          <button id="submit" type="submit" >Login</button>
+        </a>
+        <a href="#iframeregister" ><button id="register" type="submit" >Sign Up</button></a>
+        <script defer src="bootstrap.js" ></script>
+        
+      </div>
+      </div>
+    
+    </div>
+    
+    <!-- The topnavigation -->
+    <nav class="navbar navbar-expand-lg  navbar-dark bg-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+                <li class="nav-item" class="active">
+                  <a class="nav-link" href="#iframehome">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#iframeAboutUs">About Us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#iframeContact">Contact Us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#iframeFAQ">FAQ</a>
+                </li>
+                <li  class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    More Services
+                  </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#iframeMeetTutors" >Meet Tutors</a>
+                        <a class="dropdown-item" href="#iframeAplication" >Apply</a>
+                        <a class="dropdown-item" href="#iframeServices"  >Services</a>
+                        <a class="dropdown-item" href="#iframeTutorProfile">Tutor Info</a>
+                        <a class="dropdown-item" href="#iframeStudentProfile" >Student Info</a>
+                        <a class="dropdown-item" href="#iframeEvents">Events</a>
+                    </div>
+                </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+              <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+      </div>
+    </nav>
+
+    <!-- function to change color of navigation-->
+    <script>
+        
+        // Get all the navigation tabs
+        const navTabs = document.querySelectorAll('.nav-item');
+
+        // Function to handle tab click
+        function handleTabClick(event) {
+
+          
+           // Remove the 'active' class from all tabs
+          document.querySelectorAll('.nav-link').forEach(tab => tab.classList.remove('active'));
+
+          // Add the 'active' class to the clicked tab
+          event.target.classList.add('active');
+        
+        }
+
+        // Add a click event listener to each navigation tab
+        navTabs.forEach(tab => {
+          tab.addEventListener('click', handleTabClick);
+        });
+
+
+
+    </script>
+    
+    </div>
+</div>
+
+</header>
+
+<section>
+<body style="background-image: url('images/n14.jpg'); background-size: cover; background-repeat: no-repeat; background-attachment: fixed">
+
+</div style="padding-left:16px">
+
+
+  <!-- pages that willl be displayed on the body-->
+  <iframe id="iframehome"src="home/home.html" width="100%" height="2300" frameborder="0" scrolling="auto" style="display: block;"></iframe>
+  <iframe id="iframeAplication" src="application/Aplication_Form.html" width="100%" height="1400" frameborder="0" scrolling="auto" style="display: none;"></iframe>
+  <iframe id="iframeMeetTutors" src="meet tutors/meetTutors.html" width="100%" height="1000" frameborder="0" scrolling="auto" style="display: none;"></iframe>
+  <iframe id="iframeServices" src="Services/Services.html" width="100%" height="600" frameborder="0" scrolling="auto" style="display: none;"></iframe>
+  <iframe id="iframeAboutUs" src="aboutus/AboutUs.html" width="100%" height="1000" frameborder="0" scrolling="auto" style="display: none;"></iframe>
+  <iframe id="iframeContact" src="contact us/contact us.html" width="100%" height="700" frameborder="0" scrolling="auto" style="display: none;"></iframe>
+  <iframe id="iframeStudentProfile" src="student/StudentProfile.html" width="100%" height="1000" frameborder="0" scrolling="auto" style="display: none;"></iframe>
+  <iframe id="iframeFAQ" src="FAQ/FAQ.html" width="100%" height="1000" frameborder="0" scrolling="auto" style="display: none;"></iframe>
+  <iframe id="iframesubmit" src="login/LoginForm.html" width="100%" height="600" frameborder="0" scrolling="auto" style="display: none;"></iframe>
+  <iframe id="iframeregister" src="signup/SignUp.html" width="100%" height="700" frameborder="0" scrolling="auto" style="display: none;"></iframe>
+  <iframe id="iframeEvents" src="Events Page/Events Page.html" width="100%" height="700" frameborder="0" scrolling="auto" style="display: none;"></iframe>
+  <iframe id="iframeTutorProfile" src="Tutor/TutorProfile.html" width="100%" height="700" frameborder="0" scrolling="auto" style="display: none;"></iframe>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const iframeLinks = document.querySelectorAll('a[href^="#iframe"]');
+        iframeLinks.forEach(function (link) {
+            link.addEventListener('click', function (event) {
+                event.preventDefault();
+                const targetIframeId = this.getAttribute('href').slice(1); // Remove the '#'
+                const allIframes = document.querySelectorAll('iframe');
+                allIframes.forEach(function (iframe) {
+                    iframe.style.display = 'none';
+                });
+                const targetIframe = document.getElementById(targetIframeId);
+                if (targetIframe) {
+                    targetIframe.style.display = 'block';
+                }
+            });
+        });
+    });
+
+    </script>
+          
+               
+         
+
+    <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <!--<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>-->
+       
+
+        <!-- Start of ChatBot (www.chatbot.com) code
+        <script type="text/javascript">
+          window.__be = window.__be || {};
+          window.__be.id = "652e3dee7908280007c5c629";
+          (function() {
+              var be = document.createElement('script'); be.type = 'text/javascript'; be.async = true;
+              be.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdn.chatbot.com/widget/plugin.js';
+              var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(be, s);
+          })();
+        </script>
+        <noscript>You need to <a href="https://www.chatbot.com/help/chat-widget/enable-javascript-in-your-browser/" rel="noopener nofollow">enable JavaScript</a> in order to use the AI chatbot tool powered by <a href="https://www.chatbot.com/" rel="noopener nofollow" target="_blank">ChatBot</a></noscript>
+      End of ChatBot code -->
+    
+
+
+</body>
+
+</section>
+
+<!--footer code-->
+<footer>
+  <footer class="footer-distributed">
+
+    <div class="footer-left">
+
+      <a href="#iframehome" id="home"><div class="logo"><img src="images/logo.png" style="border-radius: 50%;" height="" width="70"> </div></a>
+
+      <p class="footer-links">
+        <a href="#iframehome" id="home">Home</a>
+        <a href="#iframeServices" id="Services"> Services</a>
+        <a href="#iframeAboutUs" id="aboutUs">About Us</a>
+        <a href="#iframeContact" id="contactUs">Contact Us</a>
+        <a href="#iframeFAQ" id="FAQ">FAQ</a>
+
+      </p>
+
+      <p class="footer-company-name">Bright Future Tutors © 2023</p>
+    </div>
+
+    <div class="footer-center">
+
+      <div>
+        <a href="https://www.google.com/maps/dir/-26.1906216,28.033574/152+Lilian+Ngoyi+St,+Pretoria+Central,+Pretoria,+0002/@-25.9696762,27.7826714,10z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x1e95620fe05efc11:0x759914dc1b961fab!2m2!1d28.1928327!2d-25.7445303?entry=ttu"><i class="fa fa-map-marker"></i></a>
+        <p  ><span> 0152 Lilian Ngoyi St
+         </span>Pretoria, Central</p>
+      </div>
+
+      <div>
+        <i class="fa fa-phone"></i>
+        <p>015-277-818</p>
+      </div>
+
+      <div>
+        <i class="fa fa-envelope"></i>
+        <p><a href="mailto:support@company.com">support@Brighttutors.co.za</a></p>
+      </div>
+
+    </div>
+
+    <div class="footer-right">
+
+      <p class="footer-company-about">
+        <span>About the company</span>
+        Welcome to Bright Future Tutors, your trusted partner in educational excellence. 
+        At Bright Futures Tutors, we are passionate about helping students reach their full academic potential.
+      </p>
+
+      <div class="footer-icons">
+
+        <a href="https://www.facebook.com/"> <i class="fa fa-facebook" ></i></a>
+        <a href="https://twitter.com/?lang=en"><i class="fa fa-twitter"></i></a>
+        <a href="https://za.linkedin.com/"><i class="fa fa-linkedin"></i></a>
+        
+
+      </div>
+
+    </div>
+
+  </footer>
+ 
+</footer>
+
+
+</html>
+

@@ -1,0 +1,427 @@
+body {
+    max-width:100%;
+
+    color: #FFF;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+    filter: brightness();
+    height: 800px;
+    transition: 0.5s;
+
+    .background-image: url('b1.jpg');
+    background-color: transparent;
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    margin: 0; 
+    padding: 0; 
+    
+    }
+    .container{height: 800px;}
+
+    .whyUs-item .whyUs-icon {
+  
+      position: relative;
+      margin: 0 auto;
+      width: 100px;
+      height: 100px;
+      border-radius: 100px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+
+    .whyUs-item .whyUs-icon {
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      transition: .5s;
+      z-index: 1;
+  }
+
+  
+
+
+
+    #box1 {
+        .color: #012e28;
+        .border: 4px solid;
+        background-color: #00bcd4;
+        max-width: 100%;
+        text-align: center;
+        height: 60px;
+        font-size: 30px;
+        
+        
+    }
+
+  
+    
+    #box2 {
+      width: 100%;
+      .color: #012e28;
+      .border: 4px solid;
+      .background-color: #23dfec;
+      height: 60px;
+      text-align: center;
+      font-size: 25px;
+        
+        
+    }
+
+    /* Slideshow container */
+    .slideshow-container {
+      max-width: 100%;
+      display: flex;
+      align-items: center;
+      margin: auto;
+      border: 4px solid;
+      background-color:black;
+      height:600px;
+      width: 700px;
+      text-align: center;
+      border-radius: 50%;
+      position: relative;
+      
+    }
+
+
+   .slogan{
+        animation: 5s linear 2s myOpacity;
+        .color: #021b33;
+        .border: 4px solid;
+        max-width: 100%;
+        height: 60px;
+        font-size: 20px;
+        text-align: center;
+        }
+      
+        .bot{
+          display: flex;
+          align-items:center;
+          max-width: 100%;
+          .border: 1px solid #ccc; 
+        }
+
+        .chatbot{ 
+          flex: 1; /* Allow each item to grow and fill the available space */
+          width: 100%; /* Set the width to 100% to fill the container horizontally */
+          height: 100%; /* Set the height to 100% to fill the container vertically */
+          .border: 1px solid #333; /* Optional: Add a border to each item for visualization */
+          text-align: center; /* Optional: Center the content horizontally */
+          display: flex;
+          justify-content: end;
+          align-items: center;
+        }
+        .chatbot_pic{
+          flex: 1; /* Allow each item to grow and fill the available space */
+          width: 100%; /* Set the width to 100% to fill the container horizontally */
+          height: 100%; /* Set the height to 100% to fill the container vertically */
+          border: 1px solid #333; /* Optional: Add a border to each item for visualization */
+          text-align: center; /* Optional: Center the content horizontally */
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+        
+        .reason1{background-image: url('exceptional.jpg');
+          max-width: 100%;
+          background-size: cover; 
+          display: flex;
+          align-items: center;
+          margin: auto;
+          border: 4px solid;
+          background-color:black;
+          color:white;
+          height: 600px;;
+          width: 700px;
+          text-align: center;
+          border-radius: 50%;
+          position: relative;
+          font-family:Georgia, 'Times New Roman', Times, serif;
+          font-size: 120%;
+          filter: brightness(30%);
+        }
+        
+        .reason2{background-image: url('personalized.jpeg');
+          background-size: cover; 
+          background-repeat: no-repeat; 
+          max-width: 100%;
+          display: flex;
+          align-items: center;
+          margin: auto;
+          border: 4px solid;
+          color:white;
+          height:600px;
+          width: 700px;
+          text-align: center;
+          border-radius: 50%;
+          position: relative;
+          font-family:Georgia, 'Times New Roman', Times, serif;
+          font-size: 120%;
+        }
+        
+        .reason3{background-image: url('virtual-learning.jpg');
+          background-size: cover; 
+          background-repeat: no-repeat; 
+          max-width: 100%;
+          display: flex;
+          align-items: center;
+          margin: auto;
+          border: 4px solid;
+          color:white;
+          height:600px;
+          width: 700px;
+          text-align: center;
+          border-radius: 50%;
+          position: relative;
+          font-family:Georgia, 'Times New Roman', Times, serif;
+          font-size: 120%;
+        }
+        
+        .reason4{background-image: url('Online_Teacher1.jpg');
+          background-size: cover; 
+          background-repeat: no-repeat; 
+          max-width: 100%;
+          display: flex;
+          align-items: center;
+          margin: auto;
+          border: 4px solid;
+          color:white;
+          height:600px;
+          width: 700px;
+          text-align: center;
+          border-radius: 50%;
+          position: relative;
+          font-family:Georgia, 'Times New Roman', Times, serif;
+          font-size: 120%;
+        }
+        
+        .reason5{
+          background-image: url('home-pic.png');
+          background-size: cover; 
+          background-repeat: no-repeat; 
+          max-width: 100%;
+          display: flex;
+          align-items: center;
+          margin: auto;
+          border: 4px solid;
+          color:white;
+          background-color:black;
+          height:600px;
+          width: 700px;
+          text-align: center;
+          border-radius: 50%;
+          position: relative;
+          font-family:Georgia, 'Times New Roman', Times, serif;
+          font-size: 120%;
+        }
+        .reason6{background-image: url('child-with-teacher.jpg');
+          background-size: cover; 
+          background-repeat: no-repeat; 
+          max-width: 100%;
+          display: flex;
+          align-items: center;
+          margin: auto;
+          border: 4px solid;
+          color:white;
+          height:600px;
+          width: 700px;
+          text-align: center;
+          border-radius: 50%;
+          position: relative;
+      
+          font-family:Georgia, 'Times New Roman', Times, serif;
+          font-size: 120%;
+        }
+       
+        
+
+        
+    
+    @keyframes mySlide{
+        from{margin-left: 100%;}
+        to{margin-left: 0%;}
+    }
+    
+    header1{
+        animation: myScale 5s ease ;
+    }
+
+    @keyframes myScale{
+        10%{transform: scale(0.8, 0.3);}
+    }
+    * {box-sizing:border-box}
+
+
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  margin-left: -1%;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+  margin-left: 95%;
+}
+
+.next {
+  left: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #0a0a0a;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  margin-left: auto;
+
+}
+
+.active, .dot:hover {
+  background-color:  #00bcd4;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/*Css style for join us container*/
+.box1{
+  border: 4px solid;
+  border-color: #00bcd4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: 50px;
+  margin-bottom: 50px;
+  
+
+}
+
+  .pic_container{
+  background-image: url('personalized.jpeg');
+  background-size: cover; 
+  background-repeat: no-repeat; 
+  width: 1400px;
+  height: 250px;
+  margin-top: 1%;
+  margin-bottom: 1%;
+
+
+}
+
+
+.becomeTutor #Tutor{
+width: 200px;
+background: #00bcd4;
+color: #FFF;
+border: none;
+cursor: pointer;
+padding: 10px;
+font-size: 18px;
+border: 1px solid #00bcd4;
+transition: 0.5s;
+border-radius: 8px;
+
+}
+
+.becomeTutor #Tutor:hover{
+background: #FFF;
+color: #00bcd4;
+}
+
+
+.becomeLearner #learner{
+width: 200px;
+background: #00bcd4;
+color: #FFF;
+border: none;
+cursor: pointer;
+padding: 10px;
+font-size: 18px;
+border: 1px solid #00bcd4;
+transition: 0.5s;
+border-radius: 8px;
+
+}
+
+.becomeLearner #learner:hover{
+background: #FFF;
+color: #00bcd4;
+}
+
+.joinus_container{
+  display: flex;
+}
+.becomeLearner{
+  margin-left: 5%;
+}
+.becomeTutor{
+  margin-left: 5%;
+}
+
+

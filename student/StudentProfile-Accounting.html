@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <meta charset="UTF-8">
+        <meta http-equiv="x-UA-compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width,initial scale=1.0">
+        <title>Documents</title>
+       
+        <script src="https://kit.fontawesome.com/d8583f37f1.js" crossorigin="anonymous"></script> 
+</head>
+<body>
+
+    <div class="container">
+        <link rel="stylesheet" href="Maths.css">
+        <div id="services">
+            <div class="container">
+                <h1 class="subtitle">Accounting</h1>
+                <div class="service-list">
+                    <div class="Download">
+                        <i class="fas fa-crop-alt"></i>
+                        <h2> Previous Question Papers </h2>
+                         <a href="https://www.testpapers.co.za/gr12-mathematics">Click here </a>
+                      
+                    </div>
+                    <div class="TeamsLinks">
+                        <i class="fab fa-app-store"></i>
+    
+                        <h2>Teams Meeting links</h2>
+                        <p></p>
+                        <a href="ViewMeeting.html">Click here</a>
+                    </div>
+                    <div class="ViewMarks">
+                        <i class="fas fa-code"></i>
+    
+                        <h2>View Marks</h2>
+                        <p></p>
+                        <a href="studentViewMarks.html"> click here</a>
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+   
+
+    </div>
+
+    <script>
+
+         /* Use any element to open the sidenav -*/
+
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+        
+        }
+
+        /* Set the width of the side navigation to 0 */
+        function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+}
+
+
+        var tablinks=document.getElementsByClassName("tab-links");
+        var tabcontents=document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+
+            for(tablink of tablinks)
+            {
+                tablink.classList.remove("active-link");
+
+            }
+            for (tabcontent of tabcontents)
+            {
+                  tabcontent.classList.remove("active-tab");
+            }
+            
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+
+        }
+    </script>
+    
+</body>
+</html>

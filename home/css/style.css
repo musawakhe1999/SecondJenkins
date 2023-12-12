@@ -1,0 +1,209 @@
+/********** Template CSS **********/
+
+body{
+    background-image: url('b1.jpg');
+    background-color: transparent;
+    background-size: cover; 
+}
+.carouselAutoplaying{
+ border-radius: 80%;
+ width: 800%;
+}
+#myImage1{
+    border-radius: 30%;
+}
+#myImage2{
+    border-radius: 30%;
+}
+#myImage3{
+    border-radius: 30%;
+}
+#myImage4{
+    border-radius: 30%;
+}
+
+.whyUs-text{
+    color: #FFFFFF;
+}
+
+.whyUs-icon{
+    color: #FFFFFF;
+}
+
+.whyHeader{
+    color: #FFFFFF;
+}
+
+/*** Heading ***/
+
+.Join_Us{
+    background: transparent;
+}
+
+.col-md-4{color: #FFFFFF;}
+
+
+#carouselExampleAutoplaying{
+    height: 400px;
+}
+
+
+
+/*** why Us ***/
+.whyUs-item .whyUs-icon{
+
+    position: relative;
+    margin: 0 auto;
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.whyUs-item .whyUs-icon::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transition: .5s;
+    z-index: 1;
+}
+
+.whyUs-item .whyUs-icon span {
+    position: absolute;
+    content: "";
+    width: 15px;
+    height: 30px;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+}
+
+
+
+.whyUs-item .whyUs-text {
+    animation: 13s linear 0s myScale;
+    background-color: aqua;
+    position: relative;
+    min-height: 250px;
+    padding: 30px;
+    border-radius: 50%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.whyUs-item .whyUs-text::before {
+    padding: 30px;
+    border-radius: 50%;
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #2d3033;
+    transition: .5s;
+    z-index: 1;
+}
+
+.whyUs-item .whyUs-text * {
+    animation: 13s linear 0s myScale;
+    position: relative;
+    z-index: 2;
+}
+
+.whyUs-item:hover .whyUs-icon::before,
+.whyUs-item:hover .whyUs-text::before {
+    background: transparent;
+}
+
+.whyUs-item * {
+    transition: .5s;
+}
+
+.whyUs-item:hover * {
+    color: #FFFFFF !important;
+}
+
+
+/*Css style for join us container*/
+    
+    #learner{
+        animation: 2s linear 0s mySlide;
+        width: 300px;
+        background: #00bcd4;
+        color: #FFF;
+        border: none;
+        cursor: pointer;
+        padding: 10px;
+        font-size: 18px;
+        border: 1px solid #00bcd4;
+        transition: 0.5s;
+        border-radius: 8px;
+        margin-top: 5%;
+    
+    }
+
+    #learner:hover{
+        background: #FFF;
+        color: #00bcd4;
+      
+      }
+
+
+   #tutor{
+        animation: 2s linear 0s mySlide;
+        width: 300px;
+        background: #00bcd4;
+        color: #FFF;
+        border: none;
+        cursor: pointer;
+        padding: 10px;
+        font-size: 18px;
+        border: 1px solid #00bcd4;
+        transition: 0.5s;
+        border-radius: 8px;
+    
+    }
+
+    #tutor:hover{
+        background: #FFF;
+        color: #00bcd4;
+      
+      }
+
+    .slogan{
+        animation: 9s linear 6s infinite running myOpacity;
+        color: #FFF;
+
+    }
+
+
+
+    @keyframes myOpacity{
+        50%{opacity: 0;}
+      }
+
+      @keyframes myScale{
+        10%{transform: scale(0.8, 0.3);}
+    }
+
+    @keyframes mySlide{
+        from{margin-left: 100%;}
+        to{margin-left: 0%;}
+    }
+    
+    .Heading1 {
+        color: #FFF;
+        text-align: center;
+    }
+
+    
+
+

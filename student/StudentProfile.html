@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <meta charset="UTF-8">
+        <meta http-equiv="x-UA-compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width,initial scale=1.0">
+        <title>Documents</title>
+        <link rel="stylesheet" href="studentStyle.css">
+</head>
+<body>
+
+    <div class="sidebar">
+        
+        <div class="avatar"> <img src='avatar.jpg' style="border-radius: 50%;" width="80"  > </div>
+       
+        <a href="#iframeprofile" class="sidebar-button" ><button id="profile">Profile</button> </a>
+
+        <a href="index.html" class="sidebar-button-signout" ><button id="signout" onclick="">SignOut</button></a>
+     
+    </div>
+
+    <div class="container">
+        
+        <div class="dashboard">
+            <h1>Dashboard</h1> 
+        </div>
+
+        <div class="flex-item">
+            <!-- First Flex Box Content -->
+            
+                <a href="#iframemaths" ><button id="maths">Mathematics </button> </a>
+            
+           
+                <a href="#iframephysics"  ><button id="physics">Physical Science</button></a>
+       
+           
+                <a href="#iframeAccounting"  ><button id="Accounting">Accounting</button> </a>
+           
+
+        </div>
+        <div class="flex-item2">
+            <!-- Second Flex Box Content with an iframe -->
+            
+           
+            <iframe id="iframeprofile" src="Profile.html" width="100%" height="600" frameborder="0" scrolling="no" style="display: profile;"></iframe>
+            <iframe id="iframemaths" src="StudentProfile- maths.html" width="100%" height="830" frameborder="0" scrolling="no" style="display: none;"></iframe>
+            <iframe id="iframephysics" src="StudentProfile- physics.html" width="100%" height="830" frameborder="0" scrolling="no" style="display: none;"></iframe>
+            <iframe id="iframeAccounting" src="StudentProfile-Accounting.html" width="100%" height="830" frameborder="0" scrolling="no" style="display: none;"></iframe>
+
+           
+
+                <script>
+
+               /* function showIframe(iframeNumber) {
+                    // Hide all iframes
+                    document.getElementById('iframe1').style.display = 'none';
+                    document.getElementById('iframe2').style.display = 'none';
+                    document.getElementById('iframe3').style.display = 'none';
+                    document.getElementById('iframe4').style.display = 'none';
+                    
+                    // Show the selected iframe
+                    document.getElementById('iframe' + iframeNumber).style.display = 'block';
+                    
+                }*/
+                
+
+                            document.addEventListener('DOMContentLoaded', function () {
+                    const iframeLinks = document.querySelectorAll('a[href^="#iframe"]');
+                    iframeLinks.forEach(function (link) {
+                        link.addEventListener('click', function (event) {
+                            event.preventDefault();
+                            const targetIframeId = this.getAttribute('href').slice(1); // Remove the '#'
+                            const allIframes = document.querySelectorAll('iframe');
+                            allIframes.forEach(function (iframe) {
+                                iframe.style.display = 'none';
+                            });
+                            const targetIframe = document.getElementById(targetIframeId);
+                            if (targetIframe) {
+                                targetIframe.style.display = 'block';
+                            }
+                        });
+                    });
+                });
+
+
+               </script>
+        
+        
+        
+        
+      
+
+        </div>
+
+    
+
+    
+</body>
+</html>

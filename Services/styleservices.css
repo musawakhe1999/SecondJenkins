@@ -1,0 +1,88 @@
+body {
+    max-width: 100%;
+    height: auto;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    
+    background-size: cover;
+}
+.container {
+    max-width: 100%;
+    height: auto;
+    margin: 20px auto;
+    padding: 20px;
+    margin-left: 18%;
+}
+.sidebar {
+    max-width: 100%;
+    height: auto;
+    background-color: #343a40;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 16%;
+    
+}
+.sidebar-button {
+    max-width: 100%;
+    height: auto;
+    background-color: #23dfec;
+    color: #fff;
+    padding: 10px;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    margin-bottom: 10px;
+}
+
+ #ViewPlan:hover{
+    background: #FFF;
+    color: #00bcd4;
+  }
+
+  #viewGuides:hover{
+    background: #FFF;
+    color: #00bcd4;
+  }
+
+
+
+.service-plan-info, .study-guide-prices {
+    color: #fff;
+    padding: 20px;
+    display: none;
+}
+
+.initial-info {
+    padding: 20px;
+    color: #FFF;
+}
+.plan-heading {
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    border-top: 2px solid #23dfec;
+    padding-top: 10px;
+}
+
+.plan-details {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+.plan-details strong {
+    font-weight: bold;
+}
+.study-guide-prices ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+.phone::after {
+    content: ' *';
+    color: red;
+  }

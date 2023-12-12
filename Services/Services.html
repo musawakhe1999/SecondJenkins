@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+    <link rel="stylesheet"><link rel="stylesheet" href="styleservices.css">
+</head>
+
+<body>
+         <!--Sider Bar Container -->
+        <div class="sidebar" width="200">
+            <a href="#"  id="ViewPlan" class="sidebar-button" onclick="showServicePlans()" width="100" height="600"> View Plans</a>
+            <a href="#" id="viewGuides" class="sidebar-button" onclick="showStudyGuidePrices()">View Study Guide Prices</a>
+        </div>
+
+        <!--Sider Bar Container -->
+        <div class="container" width="800">
+        <div class="initial-info">
+            <h2>Our Services</h2>
+            <p>At Bright Future Tutors, we offer tutoring services and study guides to help you excel academically.</p>
+            <p>We specialize in Mathematics, Physical Science, and Accounting.</p>
+        </div>
+
+        <div id="service-plans" class="service-plan-info">
+            <h2>Service Plans</h2>
+            <div class="plan-heading">Basic Plan</div>
+            <ul class="plan-details">
+                <li><strong>Monthly Fee:</strong> R400.00 per subject per month.</li>
+                <li>Regular scheduled classes</li>
+                <li>Comprehensive support for university applications, excluding application fees</li>
+            </ul>
+            
+            <div class="plan-heading">Standard Plan</div>
+            <ul class="plan-details">
+                <li><strong>Monthly Fee:</strong> R700.00 per subject per month.</li>
+                <li>Regular scheduled classes</li>
+                <li>Comprehensive assistance with university applications, including application fees (if applicable)</li>
+                <li>Opportunity to attend extra classes</li>
+                <li>Request additional sessions for a customized learning experience</li>
+                <li>Invaluable career guidance</li>
+            </ul>
+            
+            <div class="plan-heading">Premium Plan</div>
+            <ul class="plan-details">
+                <li><strong>Monthly Fee:</strong> R800 per month.</li>
+                <li>Free study guides to boost academic success</li>
+                <li>Complimentary refreshments after each session for sustained focus and motivation</li>
+                <li>Flexibility to request additional sessions for a tailored learning experience</li>
+            </ul>
+        </div>
+
+        <div id="study-guide-prices" class="study-guide-prices">
+            <h2>Study Guide Prices</h2>
+            <ul>
+                <li>Mathematics - R500.00</li>
+                <li>Physical Science - R400.00</li>
+                <li>Accounting - R300.00</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Script to alternate the butttons-->
+    <script>
+        function showServicePlans() {
+            document.getElementById('service-plans').style.display = 'block';
+            document.getElementById('study-guide-prices').style.display = 'none';
+        }
+
+        function showStudyGuidePrices() {
+            document.getElementById('service-plans').style.display = 'none';
+            document.getElementById('study-guide-prices').style.display = 'block';
+        }
+    </script>
+</body>
+</html>
